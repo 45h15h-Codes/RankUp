@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform, useSpring, useInView } from 'motion/react';
 import { useRef, useEffect, useState } from 'react';
+import GrowthIllustration from './GrowthIllustration';
 
 function Counter({ value, suffix = '', prefix = '' }: { value: number; suffix?: string; prefix?: string }) {
   const [count, setCount] = useState(0);
@@ -64,20 +65,15 @@ export default function StatsBanner() {
           </div>
         </div>
 
-        {/* Bird Illustration */}
+        {/* Matching Illustration */}
         <div className="hidden md:flex justify-end relative">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: 'easeOut' }}
-            className="w-[300px] h-[300px] text-primary/10"
+            className="w-[320px] h-[220px] text-primary/10"
           >
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full">
-              <path d="M16 8c-2.5 0-5 1.5-6 4s-1 5-1 5l-2-1-2 1s0-2.5 1-5 3.5-4 6-4h4z" />
-              <path d="M16 8c1.5 0 3 .5 4 1.5s1.5 2.5 1.5 4-1 3-2.5 4-3.5 1.5-5 1.5" />
-              <path d="M9 12c-1.5 0-3 .5-4 1.5s-1.5 2.5-1.5 4" />
-              <path d="M12 12c.5-1 1.5-2 3-2" />
-            </svg>
+            <GrowthIllustration />
           </motion.div>
         </div>
       </div>

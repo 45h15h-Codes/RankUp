@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { ArrowRight, CheckCircle2, Compass, Goal, Rocket, ShieldCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import GrowthIllustration from '../components/GrowthIllustration';
 
 export default function About() {
   const pillars = [
@@ -151,8 +152,9 @@ export default function About() {
 
         {/* Bottom CTA */}
         <div className="rounded-[28px] border border-primary/25 bg-white p-8 md:p-10 shadow-soft">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-            <div>
+          <div className="grid md:grid-cols-[1fr_auto] gap-8 items-end">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+              <div>
               <h3 className="text-3xl font-extrabold text-heading mb-6">Let&apos;s Grow Together.</h3>
               <div className="grid grid-cols-2 gap-8">
                 <div>
@@ -164,14 +166,18 @@ export default function About() {
                   <p className="text-[11px] font-bold text-gray-500 uppercase tracking-widest">Monthly GMV Managed</p>
                 </div>
               </div>
+              </div>
+              <Link
+                to="/contact"
+                className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold transition-all inline-flex items-center whitespace-nowrap self-start md:self-auto"
+              >
+                Get Your Growth Plan
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </div>
-            <Link
-              to="/contact"
-              className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold transition-all inline-flex items-center whitespace-nowrap self-start md:self-auto"
-            >
-              Get Your Growth Plan
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Link>
+            <div className="hidden md:flex justify-end text-primary/10 w-[220px] h-[150px]">
+              <GrowthIllustration />
+            </div>
           </div>
         </div>
       </div>
