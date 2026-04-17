@@ -56,7 +56,7 @@ const servicesAndSolutions: ServiceMediaItem[] = [
       "Stop losing patients to manual delays. Our automated WhatsApp systems follow up with patients in seconds and allow them to confirm slots directly on your calendar.",
     mediaType: "image",
     mediaSrc:
-      "https://images.unsplash.com/photo-1576091160550-217359f4b14c?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=2070&auto=format&fit=crop",
     mediaAlt: "Doctor using healthcare management platform",
     ctaText: "See Booking System",
   },
@@ -64,7 +64,7 @@ const servicesAndSolutions: ServiceMediaItem[] = [
     title: 'Precision Clinic Targeting',
     description: 'We target patients based on their specific health intent, location, and previous booking behavior, ensuring your clinic appears for the right searches at the right time.',
     mediaType: 'image',
-    mediaSrc: 'https://images.unsplash.com/photo-1576091160550-217359f42f8c?q=80&w=2070&auto=format&fit=crop',
+    mediaSrc: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?q=80&w=2080&auto=format&fit=crop',
     mediaAlt: 'High-tech medical lab and data visualization',
     ctaText: 'See Target Profiles',
   },
