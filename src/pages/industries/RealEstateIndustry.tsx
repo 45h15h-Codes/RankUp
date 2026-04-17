@@ -12,7 +12,7 @@ const solutions = ['Virtual Tour Funnels', 'Geo-Fencing Ads', 'Identity-driven R
 const servicesAndSolutions: ServiceMediaItem[] = [
   {
     title: 'Virtual Tour Lead Funnels',
-    description: 'Stop driving traffic to generic listings. We build high-converting funnels that exchange an exclusive "Virtual Tour" or "Project Brochure" for high-quality student data.',
+    description: 'Stop driving traffic to generic listings. We build high-converting funnels that exchange an exclusive "Virtual Tour" or "Project Brochure" for high-quality property buyer data.',
     mediaType: 'image',
     mediaSrc: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=2070&auto=format&fit=crop',
     mediaAlt: 'Luxury Real Estate Interior',
@@ -29,9 +29,9 @@ const servicesAndSolutions: ServiceMediaItem[] = [
   {
     title: 'Precision Luxury Targeting',
     description: 'We target High-Net-Worth Individuals (HNIs) using advanced interest-based profiling and location targeting to move premium inventories faster.',
-    mediaType: 'video',
-    mediaSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    mediaAlt: 'Real estate precision targeting walkthrough',
+    mediaType: 'image',
+    mediaSrc: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop',
+    mediaAlt: 'High-end corporate real estate architecture',
     ctaText: 'See Target Profiles',
   },
 ];

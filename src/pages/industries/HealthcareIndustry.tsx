@@ -61,13 +61,12 @@ const servicesAndSolutions: ServiceMediaItem[] = [
     ctaText: "See Booking System",
   },
   {
-    title: "Patient Trust & Education Sequences",
-    description:
-      "Establish authority before the first visit. We deploy video-first education sequences that answer patient queries and build massive trust in your healthcare brand.",
-    mediaType: "video",
-    mediaSrc: "https://www.w3schools.com/html/mov_bbb.mp4",
-    mediaAlt: "Healthcare patient education video",
-    ctaText: "Master Trust Building",
+    title: 'Precision Clinic Targeting',
+    description: 'We target patients based on their specific health intent, location, and previous booking behavior, ensuring your clinic appears for the right searches at the right time.',
+    mediaType: 'image',
+    mediaSrc: 'https://images.unsplash.com/photo-1576091160550-217359f42f8c?q=80&w=2070&auto=format&fit=crop',
+    mediaAlt: 'High-tech medical lab and data visualization',
+    ctaText: 'See Target Profiles',
   },
 ];
 

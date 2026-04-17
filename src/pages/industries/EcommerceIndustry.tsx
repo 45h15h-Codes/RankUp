@@ -29,9 +29,9 @@ const servicesAndSolutions: ServiceMediaItem[] = [
   {
     title: 'D2C Brand Scalability',
     description: 'From 10 orders a day to 1,000. We build the growth infrastructure and high-performance creative testing cycles needed for D2C brands to scale without breaking.',
-    mediaType: 'video',
-    mediaSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    mediaAlt: 'Ecommerce D2C scaling walkthrough',
+    mediaType: 'image',
+    mediaSrc: 'https://images.unsplash.com/photo-1566576721346-d4a3b4eaad5b?q=80&w=2070&auto=format&fit=crop',
+    mediaAlt: 'Ecommerce delivery parcel and logistics chain',
     ctaText: 'See Scaling Plan',
   },
 ];

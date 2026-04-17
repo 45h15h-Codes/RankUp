@@ -29,9 +29,9 @@ const servicesAndSolutions: ServiceMediaItem[] = [
   {
     title: 'Loyalty & Retention Automation',
     description: 'Turn one-time buyers into brand advocates. We build automated WhatsApp and email sequences that reward repeat purchases and announce local festive sales.',
-    mediaType: 'video',
-    mediaSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    mediaAlt: 'Retail loyalty program walkthrough',
+    mediaType: 'image',
+    mediaSrc: 'https://images.unsplash.com/photo-1441984904996-e0b6ba687e12?q=80&w=2070&auto=format&fit=crop',
+    mediaAlt: 'Modern high-end clothing store interior',
     ctaText: 'Scale Retention',
   },
 ];
@@ -83,7 +83,6 @@ const revenueSteps = [
     icon: Store,
   },
   {
-    title: 'Loyalty Loop',
     title: 'Analytics Sync',
     description: 'Monitor footfall trends and local market share.',
     icon: BarChart3,

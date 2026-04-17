@@ -29,9 +29,9 @@ const servicesAndSolutions: ServiceMediaItem[] = [
   {
     title: 'Course-Specific Meta Ads',
     description: 'We target students based on their actual academic interests and intent, ensuring your ad budget is spent only on prospects who can actually enroll.',
-    mediaType: 'video',
-    mediaSrc: 'https://www.w3schools.com/html/mov_bbb.mp4',
-    mediaAlt: 'Education ad sequence video',
+    mediaType: 'image',
+    mediaSrc: 'https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=2070&auto=format&fit=crop',
+    mediaAlt: 'University campus and library building architecture',
     ctaText: 'See Course Ads',
   },
 ];
