@@ -4,6 +4,7 @@ import { Eye, LayoutTemplate, ShoppingCart, Target, TrendingUp, Users } from 'lu
 import { Link } from 'react-router-dom';
 import OfficialPartners from '../../components/OfficialPartners';
 import StatsBanner from '../../components/StatsBanner';
+import TrustedBrands from '../../components/TrustedBrands';
 
 const processCards = [
   {
@@ -50,23 +51,6 @@ const processCards = [
   },
 ];
 
-const logos = [
-  'all-things-baby.png',
-  'bodywise.png',
-  'carolina.png',
-  'dan-henry.png',
-  'darveys.png',
-  'daughter-earth.png',
-  'dusaan.png',
-  'flossy.png',
-  'glen.png',
-  'kaya%20clinic.png',
-  'mcaffeine.png',
-  'sri-sri-tattva.png',
-  'studio-suits.png',
-  'the-kaatn-trail.png',
-  'traser-logo.png',
-];
 
 const testimonials = [
   {
@@ -126,25 +110,8 @@ export default function EcommerceService() {
         </div>
       </section>
 
-      <section className="bg-white py-12 border-y border-slate-100 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#111118]">Trusted by Leading Online Brands</h2>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-            {logos.map((logo) => (
-              <div key={logo} className="bg-white border border-slate-100 rounded-xl p-3 flex items-center justify-center">
-                <img
-                  alt="Brand Logo"
-                  referrerPolicy="no-referrer"
-                  src={`https://ik.imagekit.io/digitalroipune/${logo}`}
-                  className="h-12 w-auto object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ───── TRUSTED BRANDS ───── */}
+      <TrustedBrands />
 
       <section className="py-16 bg-[#F8FAFC] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">

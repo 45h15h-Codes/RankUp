@@ -1,87 +1,88 @@
-const SAMPLE_LOGO = '/RankUp-Logo-transperent.png';
+const BASE_URL = 'https://ik.imagekit.io/digitalroipune/';
 
 const leadGenLogos = [
-  { name: 'CARE Hospitals', src: SAMPLE_LOGO },
-  { name: 'Jamboree', src: SAMPLE_LOGO },
-  { name: 'Repos Energy', src: SAMPLE_LOGO },
-  { name: 'TATA 1mg', src: SAMPLE_LOGO },
-  { name: 'Walnut School', src: SAMPLE_LOGO },
-  { name: 'Enerparc', src: SAMPLE_LOGO },
-  { name: 'Amaha', src: SAMPLE_LOGO },
-  { name: 'ExcelR', src: SAMPLE_LOGO },
-  { name: 'Solar Square', src: SAMPLE_LOGO },
+  { name: 'All Things Baby', src: `${BASE_URL}all-things-baby.png` },
+  { name: 'Bodywise', src: `${BASE_URL}bodywise.png` },
+  { name: 'Carolina Log Co', src: `${BASE_URL}carolina.png` },
+  { name: 'Dan Henry', src: `${BASE_URL}dan-henry.png` },
+  { name: 'Darveys', src: `${BASE_URL}darveys.png` },
+  { name: 'Daughter Earth', src: `${BASE_URL}daughter-earth.png` },
+  { name: 'Dusaan', src: `${BASE_URL}dusaan.png` },
+  { name: 'Flossy', src: `${BASE_URL}flossy.png` },
 ];
 
 const ecommerceLogos = [
-  { name: 'Darveys', src: SAMPLE_LOGO },
-  { name: 'mCaffeine', src: SAMPLE_LOGO },
-  { name: 'La Joya', src: SAMPLE_LOGO },
-  { name: 'Dusaan', src: SAMPLE_LOGO },
-  { name: 'Sri Sri Tattva', src: SAMPLE_LOGO },
-  { name: 'StudioSuits', src: SAMPLE_LOGO },
-  { name: 'All Things Baby', src: SAMPLE_LOGO },
-  { name: 'Bodywise', src: SAMPLE_LOGO },
-  { name: 'Sri Krishna Jewellers', src: SAMPLE_LOGO },
+  { name: 'Glen', src: `${BASE_URL}glen.png` },
+  { name: 'Kaya Clinic', src: `${BASE_URL}kaya%20clinic.png` },
+  { name: 'mCaffeine', src: `${BASE_URL}mcaffeine.png` },
+  { name: 'Sri Sri Tattva', src: `${BASE_URL}sri-sri-tattva.png` },
+  { name: 'Studio Suits', src: `${BASE_URL}studio-suits.png` },
+  { name: 'The Kaatn Trail', src: `${BASE_URL}the-kaatn-trail.png` },
+  { name: 'Traser Logo', src: `${BASE_URL}traser-logo.png` },
 ];
 
 export default function TrustedBrands() {
   return (
-    <section className="py-16 bg-[#FAFBFD] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-heading mb-4">
-          Trusted by Leading Brands Across Industries
-        </h2>
-        <p className="text-body max-w-2xl mx-auto">
-          From Lead Generation to E-Commerce, we help brands grow through targeted marketing solutions.
+    <section className="bg-white py-24 border-y border-slate-100 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+        <p className="text-blue-600 font-bold text-sm uppercase tracking-[0.2em] mb-3">
+          Trusted Partners
         </p>
+        <h2 className="text-3xl md:text-5xl font-black text-[#111118] tracking-tight">
+          Fueling growth for industry leaders
+        </h2>
       </div>
 
-      {/* Row 1: Lead Generation */}
-      <div className="mb-12">
-        <div className="text-center mb-6">
-          <span className="text-[11px] font-semibold text-[#1A6BFF] uppercase tracking-[0.18em] bg-[#EEF4FF] px-4 py-1.5 rounded-full">
-            Lead Generation
-          </span>
-        </div>
-        <div className="relative flex overflow-x-hidden py-3">
-          <div className="animate-marquee whitespace-nowrap flex items-center">
-            {[...leadGenLogos, ...leadGenLogos].map((logo, index) => (
-              <div key={index} className="mx-3 flex-shrink-0">
-                <div className="w-[160px] h-[72px] bg-white border border-[#E8ECF4] rounded-xl flex items-center justify-center px-4 transition-all duration-300 hover:border-[#D7E2F5] hover:-translate-y-0.5">
-                  <img
-                    src={logo.src}
-                    alt={logo.name}
-                    className="max-w-[84%] max-h-[64%] object-contain"
-                    referrerPolicy="no-referrer"
-                  />
+      <div className="space-y-12">
+        {/* Row 1: Lead Generation */}
+        <div className="relative">
+          <div className="absolute left-1/2 -translate-x-1/2 -top-4 z-20">
+            {/* <span className="text-[10px] font-black text-blue-600 bg-blue-50 border border-blue-100 px-4 py-1 rounded-full uppercase tracking-widest shadow-sm">
+              Lead Generation
+            </span> */}
+          </div>
+          <div className="relative flex overflow-x-hidden py-4">
+            <div className="animate-marquee whitespace-nowrap flex items-center">
+              {[...leadGenLogos, ...leadGenLogos].map((logo, index) => (
+                <div key={`leadgen-${index}`} className="mx-4 flex-shrink-0">
+                  <div className="group relative bg-[#F8FAFC]/50 backdrop-blur-sm border border-slate-100 rounded-3xl px-10 py-6 flex items-center justify-center h-28 w-56 transition-all duration-500 hover:bg-white hover:shadow-2xl hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <img
+                      src={logo.src}
+                      alt={logo.name}
+                      className="h-16 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 h-1.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-full mx-8" />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Row 2: E-Commerce */}
-      <div>
-        <div className="text-center mb-6">
-          <span className="text-[11px] font-semibold text-[#1A6BFF] uppercase tracking-[0.18em] bg-[#EEF4FF] px-4 py-1.5 rounded-full">
-            E-Commerce
-          </span>
-        </div>
-        <div className="relative flex overflow-x-hidden py-3">
-          <div className="animate-marquee-reverse whitespace-nowrap flex items-center">
-            {[...ecommerceLogos, ...ecommerceLogos].map((logo, index) => (
-              <div key={index} className="mx-3 flex-shrink-0">
-                <div className="w-[160px] h-[72px] bg-white border border-[#E8ECF4] rounded-xl flex items-center justify-center px-4 transition-all duration-300 hover:border-[#D7E2F5] hover:-translate-y-0.5">
-                  <img
-                    src={logo.src}
-                    alt={logo.name}
-                    className="max-w-[84%] max-h-[64%] object-contain"
-                    referrerPolicy="no-referrer"
-                  />
+        {/* Row 2: E-Commerce */}
+        <div className="relative">
+          <div className="absolute left-1/2 -translate-x-1/2 -top-4 z-20">
+            {/* <span className="text-[10px] font-black text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1 rounded-full uppercase tracking-widest shadow-sm">
+              E-Commerce
+            </span> */}
+          </div>
+          <div className="relative flex overflow-x-hidden py-4">
+            <div className="animate-marquee-reverse whitespace-nowrap flex items-center">
+              {[...ecommerceLogos, ...ecommerceLogos].map((logo, index) => (
+                <div key={`ecommerce-${index}`} className="mx-4 flex-shrink-0">
+                  <div className="group relative bg-[#F8FAFC]/50 backdrop-blur-sm border border-slate-100 rounded-3xl px-10 py-6 flex items-center justify-center h-28 w-56 transition-all duration-500 hover:bg-white hover:shadow-2xl hover:-translate-y-2 cursor-pointer overflow-hidden">
+                    <img
+                      src={logo.src}
+                      alt={logo.name}
+                      className="h-14 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-x-0 bottom-0 h-1.5 bg-blue-600 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-full mx-8" />
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>

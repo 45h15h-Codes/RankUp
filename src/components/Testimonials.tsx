@@ -35,7 +35,7 @@ export default function Testimonials() {
           </h2>
         </div>
 
-        <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-8 md:pb-0 scrollbar-hide snap-x">
+        <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 sm:gap-8 pb-8 md:pb-0 hide-scrollbar snap-x snap-mandatory">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
@@ -43,8 +43,9 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="min-w-[300px] md:min-w-0 snap-center group"
+              className="min-w-[85vw] sm:min-w-[400px] md:min-w-0 snap-center group"
             >
+
               <div className="relative aspect-[3/4] rounded-2xl overflow-hidden mb-6 shadow-lg">
                 <img
                   src={testimonial.image}
@@ -64,11 +65,11 @@ export default function Testimonials() {
                 </div>
 
                 {/* Play Button */}
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-16 h-16 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 group-hover:scale-110 transition-transform duration-300">
                     <Play className="w-6 h-6 text-white fill-white" />
                   </div>
-                </div>
+                </div> */}
 
                 {/* Brand Logo Small */}
                 <div className="absolute bottom-4 right-4">

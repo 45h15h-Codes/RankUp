@@ -36,6 +36,27 @@
   .text-gradient-blue {
     @apply bg-clip-text text-transparent bg-linear-to-r from-[#1A6BFF] to-[#0052CC];
   }
+  
+  /* Mobile-First Utilities */
+  .touch-safe {
+    @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+  }
+  
+  .small-card-grid {
+    @apply grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-3;
+  }
+
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-soft;
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @keyframes marquee {
@@ -54,3 +75,4 @@
   width: max-content;
   animation: marquee 60s linear infinite reverse;
 }
+

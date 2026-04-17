@@ -24,10 +24,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-heading leading-[1.1] mb-8 max-w-4xl mx-auto"
+          className="text-[32px] sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-heading leading-[1.1] mb-8 max-w-4xl mx-auto tracking-tight"
         >
-          Get More Revenue with <br />
-          <span className="text-gradient-blue">Qualified Leads</span> & <br />
+          Get More Revenue with <br className="hidden sm:block" />
+          <span className="text-gradient-blue">Qualified Leads</span> & <br className="hidden sm:block" />
           <span className="text-gradient-blue">Online Sales</span>
         </motion.h1>
 
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-lg md:text-xl text-body max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-base sm:text-lg md:text-xl text-body max-w-2xl mx-auto mb-10 leading-relaxed font-medium"
         >
           Helping businesses grow by reaching the right audience and turning them into loyal customers with smart targeting and automation.
         </motion.p>
@@ -46,15 +46,17 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
+          className="px-4 sm:px-0"
         >
           <Link
             to="/contact"
-            className="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-full font-bold text-lg transition-all shadow-xl shadow-primary/25 inline-flex items-center mx-auto group"
+            className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-5 sm:py-4 rounded-2xl sm:rounded-full font-bold text-lg transition-all shadow-xl shadow-primary/25 inline-flex items-center justify-center group active:scale-95"
           >
             Get Your Growth Plan
             <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
           </Link>
         </motion.div>
+
       </div>
 
       {/* Decorative Elements */}

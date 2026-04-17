@@ -23,15 +23,15 @@ const partners = [
 
 export default function OfficialPartners() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-12 sm:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-heading flex items-center justify-center">
-            <span className="mr-3">🤝</span> Official Partners with
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-heading flex items-center justify-center">
+            <span className="mr-2 sm:mr-3">🤝</span> Official Partners with
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="small-card-grid sm:grid-cols-3 gap-3 sm:gap-8 max-w-4xl mx-auto">
           {partners.map((partner, index) => (
             <motion.div
               key={partner.name}
@@ -40,9 +40,9 @@ export default function OfficialPartners() {
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.03 }}
               viewport={{ once: true }}
-              className="bg-white border border-gray-100 rounded-2xl p-8 shadow-soft flex flex-col items-center justify-center text-center group transition-all"
+              className="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-soft flex flex-col items-center justify-center text-center group transition-all"
             >
-              <div className="h-12 flex items-center justify-center mb-6">
+              <div className="h-8 sm:h-12 flex items-center justify-center mb-4 sm:mb-6">
                 <img
                   src={partner.logo}
                   alt={partner.name}
@@ -50,8 +50,8 @@ export default function OfficialPartners() {
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <p className="text-sm font-bold text-heading mb-1">{partner.name}</p>
-              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+              <p className="text-[10px] sm:text-sm font-bold text-heading mb-0.5 sm:mb-1">{partner.name}</p>
+              <p className="text-[8px] sm:text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                 {partner.badge}
               </p>
             </motion.div>
@@ -59,5 +59,6 @@ export default function OfficialPartners() {
         </div>
       </div>
     </section>
+
   );
 }
